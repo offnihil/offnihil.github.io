@@ -17,13 +17,79 @@
     </style>
     
   </head>
-  <body>
-    <!--container principal-->
-    <div class="w3-container">
-      <div class="w3-container w3-warning w3-center w3-round-xlarge ogu-hifen" style="margin: 16px auto 16px auto; max-width: 550px; padding: 16px 0px 16px 0px;">
-        <h1 class="ogu-canva" style="font-weight: 800;">EM CONS<wbr>TRUÇÃO!</h1>
+  <body style="background-color: #22092C;" style="">
+    <!--container menu-->
+    <div class="w3-container" style="width: 100%; background-image: linear-gradient(to right, #22092c, #3d0f3a, #5b1244, #7b1649, #991e4a, #991e4a, #991e4a, #991e4a, #7b1649, #5b1244, #3d0f3a, #22092c); margin: 0px;">
+      <div class="w3-bar" style="max-width: 500px; margin: auto; color: white;">
+        <button class="w3-bar-item w3-button" onclick="openCtd('Home')">Inicio</button>
+        <button class="w3-bar-item w3-button" onclick="openCtd('Sobre')">Sobre</button>
+        <button class="w3-bar-item w3-button" onclick="openCtd('Outros')">Outros</button>
       </div>
     </div>
-  
+    <!---->
+    <!--container principal_1-->
+    <div class="ctd" id="Home" style="">
+    <div class="w3-container pc" style="max-width: 950px; margin: 0px auto 10px auto;">
+    <!--conteudo abaixo-->
+      <div class="w3-container" style="">
+        <div class="w3-container w3-center w3-round-xlarge ogu-hifen" style="margin: 16px auto 16px auto; max-width: 550px; padding: 16px 0px 16px 0px; background-color: #872341;">
+          <h1 class="ogu-canva" style="font-weight: 800;">INICIO EM <wbr>CONSTRUÇÃO!</h1>
+        </div>
+      </div>
+
+      <div class="w3-container" style="background-color: #872341;">
+        <div class="w3-container w3-center w3-round-xlarge ogu-hifen" style="margin: 16px auto 16px auto; max-width: 550px; padding: 16px 0px 16px 0px; background-color: #F05941;">
+          <h1 class="ogu-canva" style="font-weight: 800;">INICIO EM <wbr>CONSTRUÇÃO!</h1>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!---->
+    <!--container principal_2-->
+    <div class="ctd"  id="Sobre" style="display:none">
+    <div class="w3-container pc" style="max-width: 950px; margin: 0px auto 10px auto;">
+    <!--conteudo abaixo-->
+      <div class="w3-container" style="">
+        <div class="w3-container w3-center w3-round-xlarge ogu-hifen" style="margin: 16px auto 16px auto; max-width: 550px; padding: 16px 0px 16px 0px; background-color: #872341;">
+          <h1 class="ogu-canva" style="font-weight: 800;">SOBRE EM <wbr>CONSTRUÇÃO!</h1>
+        </div>
+      </div>
+
+      <div class="w3-container" style="background-color: #872341;">
+        <div class="w3-container w3-center w3-round-xlarge ogu-hifen" style="margin: 16px auto 16px auto; max-width: 550px; padding: 16px 0px 16px 0px; background-color: goldenrod;">
+          <h1 class="ogu-canva" style="font-weight: 800;">SOBRE EM <wbr>CONSTRUÇÃO!</h1>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!---->
+    <!--container principal_3-->
+    <div class="ctd" id="Outros" style="display:none">
+    <div class="w3-container" style="max-width: 950px; margin: 0px auto 10px auto;">
+    <!--conteudo abaixo-->
+      <div class="w3-container" style="">
+        <div class="w3-container w3-center w3-round-xlarge ogu-hifen" style="margin: 16px auto 16px auto; max-width: 550px; padding: 16px 0px 16px 0px; background-color: #872341;">
+          <h1 class="ogu-canva" style="font-weight: 800;">OUTROS EM <wbr>CONSTRUÇÃO!</h1>
+        </div>
+      </div>
+
+      <div class="w3-container" style="background-color: #872341;">
+        <div class="w3-container w3-warning w3-center w3-round-xlarge ogu-hifen" style="margin: 16px auto 16px auto; max-width: 550px; padding: 16px 0px 16px 0px;">
+          <h1 class="ogu-canva" style="font-weight: 800;">OUTROS EM <wbr>CONSTRUÇÃO!</h1>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script>
+      function openCtd(ctdName) {
+        var i;
+        var x = document.getElementsByClassName("ctd");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        document.getElementById(ctdName).style.display = "block";  
+      }
+    </script>  
   </body>
 </html>
