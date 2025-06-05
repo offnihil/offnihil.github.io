@@ -4,7 +4,7 @@
 
 ---
 
-##### Canal Youtube - [OGu NiHiL](https://youtube com/@OGuNiHiL "OGu NiHiL")
+##### Canal Youtube - [OGu NiHiL](https://youtube.com/@OGuNiHiL "OGu NiHiL")
 
 ##### Canal Youtube Live - [The Wisper](https://youtube.com/@thewisper "The Wisper")
 
