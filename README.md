@@ -8,6 +8,8 @@
 
 ##### Canal Youtube Live - [The Wisper](https://youtube.com/@thewisper "The Wisper")
 
-##### SoundCloud - [Link do SoundCloud](https://soundcloud.com/ogunihil "Link do SoundCloud")
+### SoundCloud - [Link do SoundCloud](https://soundcloud.com/ogunihil "Link do SoundCloud")
 
 ##### Instagram - [Link do Perfil](https://instagram.com/ola_nihil "Link do Perfil do Instagram")
+
+##### Threads - [Link do Perfil](https://www.threads.net/@ola_nihil "Link do Perfil do Threads")
