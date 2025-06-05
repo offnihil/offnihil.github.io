@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://static.canva.com/web/static_font_4.ltr.css">
     <link rel="stylesheet" href="style.css"/>
     
@@ -18,16 +19,34 @@
     
   </head>
   <body style="background-color: #22092C;" style="">
-    <!--container menu-->
+    <!--Container Menu-->
     <div class="w3-container" style="width: 100%; background-image: linear-gradient(to right, #22092c, #3d0f3a, #5b1244, #7b1649, #991e4a, #991e4a, #991e4a, #991e4a, #7b1649, #5b1244, #3d0f3a, #22092c); margin: 0px;">
-      <div class="w3-bar" style="max-width: 500px; margin: auto; color: white;">
-        <button class="w3-bar-item w3-button" onclick="openCtd('Home')">Inicio</button>
-        <button class="w3-bar-item w3-button" onclick="openCtd('Sobre')">Sobre</button>
-        <button class="w3-bar-item w3-button" onclick="openCtd('Outros')">Outros</button>
+      <div class="w3-bar w3-hide-small" style="max-width: 500px; margin: auto; color: white;">
+        <button class="w3-bar-item w3-button tablink w3-red" onclick="openCtd(event,'Home')"><i class="fa fa-home"></i></button>
+        <button class="w3-bar-item w3-button tablink" onclick="openCtd(event,'Port')">ePortfólio</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openCtd(event,'Sobre')">Sobre</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openCtd(event,'Outros')">Outros</button>
       </div>
+      <!--Menu Mobile-->
+      <div class="w3-bar w3-hide-large" style="max-width: 500px; margin: auto; color: white;"></div>
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-right w3-xxlarge w3-hide-large  w3-hide-medium"><i class="fa fa-bars" style="color: white;"></i></button>
+
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content" style="background-color: #872341; color: white;">
+            <div class="w3-container">
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright" style="background-color: #872341;;">&times;</span>
+                <button class="w3-bar-item w3-button w3-mobile" onclick="openCtdMob('Home')"><i class="fa fa-home"></i></button>
+                <button class="w3-bar-item w3-button w3-mobile" onclick="openCtdMob('Port')">ePortfólio</button>
+                <button class="w3-bar-item w3-button w3-mobile" onclick="openCtdMob('Sobre')">Sobre</button>
+                <button class="w3-bar-item w3-button w3-mobile" onclick="openCtdMob('Outros')">Outros</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
     </div>
     <!---->
-    <!--container principal_1-->
+    <!--Container Home-->
     <div class="ctd" id="Home" style="">
     <div class="w3-container pc" style="max-width: 950px; margin: 0px auto 10px auto;">
     <!--conteudo abaixo-->
@@ -45,7 +64,48 @@
     </div>
     </div>
     <!---->
-    <!--container principal_2-->
+    <!--Container Portifolio-->
+    <div class="ctd" id="Port" style="display:none">
+    <div class="w3-container pc" style="max-width: 950px; margin: 0px auto 10px auto;">
+    <!--conteudo abaixo-->
+      <div class="w3-container" style="color: white;">
+        <div class="w3-container" style="max-width:500px; margin:auto;">
+          <div class="w3-flex ">
+            <div class="" style="padding: 6px">Index:</div>
+            <div class="" style="padding: 6px"><a href="#post">Posts</a></div>
+            <div class="" style="padding: 6px"><a href="#">Link2</a></div>
+            <div class="" style="padding: 6px"><a href="#">Link3</a></div>
+          </div>
+        </div>
+      </div>
+      <!--Conteudo ePortifolio 1-->
+      <div class="w3-container" style="background-color: #872341; padding: 15px;">
+        <h2 style="color: white;" id="post"><b>Portfólio de Posts</b></h2>
+        <div class="w3-grid" style="gap:8px;grid-template-columns:repeat(auto-fit,minmax(150px, 0.5fr))">
+          <div class="w3-card-4 w3-padding w3-round-large" style="background-color: whitesmoke;">
+              <div class="" style="width:100%; max-width:400px;  min-width:150px;">
+                  <img class="w3-round-large" src="https://64.media.tumblr.com/c6d832dce337c28504ddcf23649cf4b1/d9f4d299f53c3a58-95/s2048x3072/64d83193e6169fc87fb085219340549f4eee706d.jpg" alt="Alps" style="width:100%;">
+                  <div class="w3-container w3-center">
+                  <h2>Item 1</h2>
+                  <a href="#">Exemplo</a>
+                  </div>
+              </div>
+          </div>
+          <div class="w3-card-4 w3-padding w3-round-large" style="background-color: whitesmoke;">
+              <div class="" style="width:100%; max-width:400px;  min-width:150px;">
+                  <img class="w3-round-large" src="https://64.media.tumblr.com/c6d832dce337c28504ddcf23649cf4b1/d9f4d299f53c3a58-95/s2048x3072/64d83193e6169fc87fb085219340549f4eee706d.jpg" alt="Alps" style="width:100%;">
+                  <div class="w3-container w3-center">
+                  <h2>Item 2</h2>
+                  <a href="#">Exemplo</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!---->
+    <!--Container Sobre-->
     <div class="ctd"  id="Sobre" style="display:none">
     <div class="w3-container pc" style="max-width: 950px; margin: 0px auto 10px auto;">
     <!--conteudo abaixo-->
@@ -63,7 +123,7 @@
     </div>
     </div>
     <!---->
-    <!--container principal_3-->
+    <!--Container Outros-->
     <div class="ctd" id="Outros" style="display:none">
     <div class="w3-container" style="max-width: 950px; margin: 0px auto 10px auto;">
     <!--conteudo abaixo-->
@@ -80,9 +140,26 @@
       </div>
     </div>
     </div>
+    
 
     <script>
-      function openCtd(ctdName) {
+      //Função Menu 
+      function openCtd(evt, ctdName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("ctd");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+        }
+        document.getElementById(ctdName).style.display = "block";
+        evt.currentTarget.className += " w3-red";
+      }
+
+      //Função Menu Mobile
+      function openCtdMob(ctdName) {
         var i;
         var x = document.getElementsByClassName("ctd");
         for (i = 0; i < x.length; i++) {
