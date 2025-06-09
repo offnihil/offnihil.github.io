@@ -19,3 +19,9 @@
     -ms-hyphens: auto;
     hyphens: auto;
 }
+
+@media only screen and (max-width: 600px) {
+  ogu-menu {
+    font-size: 35px;
+  }
+}
