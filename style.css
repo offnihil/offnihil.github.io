@@ -28,6 +28,28 @@
   filter: drop-shadow(5px 10px 6px #272727);
 }
 
+.swapt-hover::before {
+  font-weight: bold;
+  content: "Ury Rios Silva";
+}
+.swapt-hover:hover::before {
+  content: "OGu NiHiL MC";
+
+}
+
+.swap-img {
+  /* Swaps the visual asset instantly on hover */
+  max-width: 500px important!;
+  width:100% important!;
+  content: url('https://64.media.tumblr.com/eb03a96f8e25d451008ba0ef7f48619b/90aba28af3ea7753-e9/s1280x1920/d3dd11260c11e72147ad9b8c6700f59ef77a982a.jpg');
+}
+.swap-img:hover {
+  /* Swaps the visual asset instantly on hover */
+  max-width: 500px important!; 
+  width:100% important!;
+  content: url('https://64.media.tumblr.com/42bc226a6020ac91bcb11a401ac6da21/96cc3d9eed854fa5-d3/s2048x3072/1fbe04dd64140ae8789c8c7de30ac244d4a72dc8.pnj');
+}
+
 #topBtn {
   display: none;
   position: fixed;
@@ -48,6 +70,8 @@
   background-color: #cccccc;
   color: black;
 }
+
+
 
 @media only screen and (max-width: 600px) {
   ogu-menu {
